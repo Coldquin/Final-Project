@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en"  data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Achill-Island-Holiday-Home</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/styles.css">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
+  <style>
+    .col-md {
+        height: 300px;
+    }
+</style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-light py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">A-Chill-Island Holiday&Hostel</a>
+
+        <button class="navbar-toggler" 
+        type ="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navmenu"
+        >
+        <span class ="navbar-toggler-icon">
+
+        </span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id =navmenu>
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#Bookings" class ="nav-link">Bookings</a>
+          </li>
+          <li class="nav-item">
+            <a href="#About" class ="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Contact Us" class ="nav-link">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Surf Report" class ="nav-link">Surf Report</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Dashboard section -->
+     <section id="Bookings" class="bg-dark text-light p-5 p-lg-4 text-center text-sm-start">
+      <div class="container">
+        <div class ="d-sm-flex align-items-center justify-content-between">
+        <div>
+          <h1>Welcome to <span class ="text-success"> Achill Island 
+
+          </span></h1>
+          <p class="lead my-4">
+            Welcome to your perfect getaway on Achill Island!
+
+Nestled along Ireland’s stunning Wild Atlantic Way, our holiday homes offer the ideal escape to unwind and experience the breathtaking beauty of Achill Island.
+ Whether you're seeking tranquil beachside serenity, adventure in the rugged hills, or simply a cozy retreat with a view, we have the perfect accommodation for you.
+
+
+Book your stay today and create lasting memories in one of Ireland’s most beautiful and unspoiled destinations!
+
+          </p>
+          <button class="btn btn-primary btn-lg"
+            data-bs-toggle="modal" data-bs-target="#Booking">Book Now</button>
+            
+        </div>
+        
+        <img class="img-fluid w-50 d-none d-sm-block" src="img/Hostel.jpg" alt="Hostel">
+      </div>
+      </div>
+     </section>
+
+
+     <!-- Carousel -->
+      <section>
+     <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade p-5">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner y-50 w-60">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="/img/House1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Seperate House</h5>
+            <p>Kitchen with Mini Oven.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="/img/House2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Seperate House Bedroom</h5>
+            <p>King Sized Bedroom.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/house3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Seperate House Second Bedroom</h5>
+            <p>Second Bedroom Queen Sized Bed</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+   </section>
+
+     <!-- about Section -->
+     <section id="About" class="bg-primary text-light p-5 p-lg-4 text-center text-sm-start">
+      <div class="container">
+        <div class ="d-sm-flex align-items-center justify-content-between">
+        <div>
+          <h1> <span class ="text-info-subtle"> About Us
+
+          </span></h1>
+          <p class="lead my-4">
+            Welcome to our family-run holiday home and hostel on the beautiful Achill Island! 
+            Managed by two brothers, we offer a warm and welcoming stay in one of Ireland's top spots for surfing and hiking.
+            Check in in with us for the Achill half marathon and The Battle of the lake.
+            Come and experience the adventure and beauty of Achill Island with us!"
+          
+          </p>
+          
+        </div>
+        
+        <img class="img-fluid w-50 " src="img/Brothers.jpg" alt="Bro">
+      </div>
+     </section>
+
+     <!-- Beaches on the island Cards & Surf Report -->
+      
+      <section id="Surf Report" class="bg-info-subtle text-light p-5 text-center">
+        <h3 class="mb-3 mb-md-o">Check out Blue Flag beaches on the island</h3>
+        <div class="container">
+          
+          <div class="d-md-flex justify-content-between
+          align-items-center">
+       
+        
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-info text-light">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Keel</h3>
+                <img src="/img/Keel.jpg" class="rounded-circle mb-3 w-50">
+              
+
+                </h3>
+                <p class="card-text">
+                  Renowned for its consistent surf conditions, Keel Beach offers a range of waves suitable for all skill levels, from beginners to seasoned pros.
+                  Even if you're not into surfing, the beach is a fantastic spot to soak up the stunning natural beauty of the island,
+                </p>
+                
+                
+              
+
+              </div>
+            </div>
+            </div>
+
+          <div class="col-md">
+          <div class="card bg-info-subtle text-light">
+            <div class="card-body text-center">
+              <h3 class="card-title mb-3">Doega</h3>
+              <img src="/img/Doega Beach.jpg" class="rounded-circle mb-3 w-50">
+             
+
+              <p class="card-text">
+                Dooega Beach on Achill Island is a hidden gem, boasting pristine sands and crystal-clear waters. 
+                It's a tranquil escape, surrounded by stunning landscapes and offering a peaceful day by the sea.
+                
+              </p>
+
+            </div>
+          </div>
+        </div>
+          
+          <div class="col-md">
+            <div class="card bg-success-subtle text-light">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Keem Bay</h3>
+                <img src="/img/Keem.jpg" class="rounded-circle mb-3 w-50">
+  
+                <p class="card-text">
+                  Keem Bay, nestled on the western edge of Achill Island, is a breathtaking haven of natural beauty. 
+                  This Blue Flag beach boasts pristine sands, crystal-clear waters, and dramatic cliffs that rise majestically from the shore.
+                  
+                
+                  
+                </p>
+               
+                
+
+
+
+        </div>
+       </div>
+      </div>
+       
+        
+      </div>
+     </div>
+
+     
+     </section>
+     <section>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Keel Surf Report
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><link href="//www.surf-forecast.com/stylesheets/widget.css" media="screen" rel="stylesheet" type="text/css" /><div class="wf-width-cont surf-fc-widget widget-centered"><div class="widget-container"><div class="external-cont"><iframe class="surf-fc-i" allowtransparency="true" src="//www.surf-forecast.com/breaks/Keel/forecasts/widget/a" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"></iframe><div class="footer"><a class="logo" href="//www.surf-forecast.com/"><img src="//www.surf-forecast.com/images/widget.png" width="1" height="1" /></a><div class="about" id="cmt">More <a href="//www.surf-forecast.com/breaks/Keel">Detailed Surf Conditions &amp; Webcams for&nbsp;Keel</a> <nobr>at&nbsp;<a href="//www.surf-forecast.com/">surf-forecast.com</a></nobr>.</div></div></div></div></div></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Doega Surf Report
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><link href="//www.surf-forecast.com/stylesheets/widget.css" media="screen" rel="stylesheet" type="text/css" /><div class="wf-width-cont surf-fc-widget widget-centered"><div class="widget-container"><div class="external-cont"><iframe class="surf-fc-i" allowtransparency="true" src="//www.surf-forecast.com/breaks/Dooega/forecasts/widget/a" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"></iframe><div class="footer"><a class="logo" href="//www.surf-forecast.com/"><img src="//www.surf-forecast.com/images/widget.png" width="1" height="1" /></a><div class="about" id="cmt">View detailed surf forecast for <a href="//www.surf-forecast.com/breaks/Dooega">Dooega</a>. Visit <a href="//www.surf-forecast.com/breaks/Dooega">surf-forecast.com</a> for more details, long range forecasts, surf reports, swell and weather maps.</div></div></div></div></div></div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+
+
+
+     </section>
+   
+
+
+
+
+
+    <!-- Contact  -->
+    <section id="Contact Us" class="p-5">
+      <div class="row g-4">
+        <div class="col-md">
+          <h2 class="text-center mb-4">Contact Us</h2>
+          <ul class="list-group list group-flush lead">
+            <li class="list-group-item">
+            <span class="fw-bold">Our Address</span> 
+            ACHILL BLISS
+            DOOEGA EAST
+            ACHILL
+            CO. MAYO
+            F28 V021
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Our Number</span> (+353) 87624785
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Our Checkout time</span> 11:00-12:00
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Our Check in time</span> 16:00-21:00
+          </li>
+          
+      </ul>
+      </div>
+
+    
+<!-- Location -->
+      <div class="col-md text-center">
+        <h3>Our Location</h3>
+      <div id="map">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
+    <script>mapboxgl.accessToken = 'pk.eyJ1IjoiY29sZHF1aW4iLCJhIjoiY203Y3c3aXJiMHBscTJqc2Q0NTllMzk0dCJ9.0s8xIKJJBVdrOADSavINGQ';
+      const map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v9',
+          projection: 'globe', // Display the map as a globe, since satellite-v9 defaults to Mercator
+          zoom: 16.18,
+          center: [-10.017741, 53.930078]
+      });
+  
+      map.addControl(new mapboxgl.NavigationControl());
+      map.scrollZoom.disable();
+  
+      map.on('style.load', () => {
+          map.setFog({}); // Set the default atmosphere style
+      });
+  
+      // The following values can be changed to control rotation speed:
+  
+      // At low zooms, complete a revolution every two minutes.
+      const secondsPerRevolution = 240;
+      // Above zoom level 5, do not rotate.
+      const maxSpinZoom = 5;
+      // Rotate at intermediate speeds between zoom levels 3 and 5.
+      const slowSpinZoom = 3;
+  
+      let userInteracting = false;
+      const spinEnabled = true;
+  
+      function spinGlobe() {
+          const zoom = map.getZoom();
+          if (spinEnabled && !userInteracting && zoom < maxSpinZoom) {
+              let distancePerSecond = 360 / secondsPerRevolution;
+              if (zoom > slowSpinZoom) {
+                  // Slow spinning at higher zooms
+                  const zoomDif =
+                      (maxSpinZoom - zoom) / (maxSpinZoom - slowSpinZoom);
+                  distancePerSecond *= zoomDif;
+              }
+              const center = map.getCenter();
+              center.lng -= distancePerSecond;
+              // Smoothly animate the map over one second.
+              // When this animation is complete, it calls a 'moveend' event.
+              map.easeTo({ center, duration: 1000, easing: (n) => n });
+          }
+      }
+  
+      // Pause spinning on interaction
+      map.on('mousedown', () => {
+          userInteracting = true;
+      });
+      map.on('dragstart', () => {
+          userInteracting = true;
+      });
+  
+      // When animation is complete, start spinning if there is no ongoing interaction
+      map.on('moveend', () => {
+          spinGlobe();
+      });
+  
+      spinGlobe();</script>
+ 
+    </section>
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2025 A-Chill-Island-Home&Hostel</p>
+        <a href="#" class="postion-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+
+
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="Booking" tabindex="-1" aria-labelledby="BookingLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="BookingLabel">Booking</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill in your contact Details</p>
+            <form>
+              <Div class="mb-3">
+                <label for="first-name" class="call-form-label">First Name:
+
+                </label>
+                <input type="text" class="form-control" id="first-name"
+                />
+              </Div>
+              <Div class="mb-3">
+                <label for="Last-name" class="call-form-label">Last Name:
+
+                </label>
+                <input type="text" class="form-control" id="Last-name"
+                />
+              </Div>
+
+              <Div class="mb-3">
+                <label for="Email" class="call-form-label">Email:
+
+                </label>
+                <input type="text" class="form-control" id="Email"
+                />
+              </Div>
+              <Div class="mb-3">
+                <label for="Phone-Number" class="call-form-label">Phone Number:
+
+                </label>
+                <input type="text" class="form-control" id="Phone "
+                />
+              </Div>
+
+
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- Map -->
+    
+   
+  </body>
+</html>
