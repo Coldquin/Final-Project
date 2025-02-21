@@ -1,3 +1,5 @@
+
+
 window.addEventListener("DOMContentLoaded", () => {
     class ButtonHandler {
         constructor(buttonElementId){
@@ -6,7 +8,17 @@ window.addEventListener("DOMContentLoaded", () => {
             document.getElementById("root").appendChild(this.buttonElement);
         }
         handleEvent(event){
-            fetch("https://www.surf-forecast.com/osm/points_of_interest.json?bbox=-10.3436279296875,53.80146187935565,-9.830017089843752,54.14313233476031&types=locations,sea_temp,buoys,metars&current_location=Keel&zoom=10")
+            const lat = 53.975797;
+            const lng = -10.083917;
+            const params = 'windSpeed';
+
+fetch(`https://api.stormglass.io/v2/weather/point?lat=${lat}&lng=${lng}&params=${params}`, {
+  headers: {
+    'Authorization': '0558e164-f007-11ef-b19c-0242ac130003-0558e2ae-f007-11ef-b19c-0242ac130003'
+  }
+
+                }
+            )
                 .then(response => {
                     if (!response.ok) {
                         console.error('Network response was not ok');
@@ -23,4 +35,6 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     }
     const buttonhandler = new ButtonHandler("Surf-button");
+    
+    
 });
