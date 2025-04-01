@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id =navmenu>
           <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="#Bookings" class ="nav-link">Bookings</a>
+            <a href="booking.html" class="nav-link">Bookings</a>
           </li>
           <li class="nav-item">
             <a href="#About" class ="nav-link">About</a>
@@ -46,7 +46,7 @@
             <a href="#Contact Us" class ="nav-link">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a href="#Surf Report" class ="nav-link">Surf Report</a>
+            <a href="#Surf Report" class ="nav-link">Weather Report</a>
           </li>
           </ul>
         </div>
@@ -71,7 +71,7 @@ Nestled along Ireland’s stunning Wild Atlantic Way, our holiday homes offer th
 Book your stay today and create lasting memories in one of Ireland’s most beautiful and unspoiled destinations!
 
           </p>
-          <button class="btn btn-primary btn-lg"
+          <button class="btn btn-primary btn-lg span"
             data-bs-toggle="modal" data-bs-target="#Booking">Book Now</button>
             
         </div>
@@ -135,7 +135,7 @@ Book your stay today and create lasting memories in one of Ireland’s most beau
           <p class="lead my-4">
             Welcome to our family-run holiday home and hostel on the beautiful Achill Island! 
             Managed by two brothers, we offer a warm and welcoming stay in one of Ireland's top spots for surfing and hiking.
-            Check in in with us for the Achill half marathon and The Battle of the lake.
+            Check in with us for the Achill half marathon and The Battle of the lake.
             Come and experience the adventure and beauty of Achill Island with us!"
           
           </p>
@@ -222,8 +222,22 @@ Book your stay today and create lasting memories in one of Ireland’s most beau
 
      
      </section>
-     <div id="root"></div>
-     <button id="Surf-button">Surfs up</button>
+     <!--Weather Api -->
+     <div class="justify-content-center" id="Weather-container">
+      <h2>Weather Report</h2>
+      <input type="text" id="city" placeholder="Enter Achill">
+        <button onclick="getWeather()">Weather Report </button>
+
+        <img id="weather-icon" alt="Weather Icon">
+
+        <div id="temp-div"></div>
+
+        <div id="weather-info"></div>
+
+        <div id="hourly-forecast"></div>
+     </div>
+    
+     
 
 
 
@@ -269,7 +283,8 @@ Book your stay today and create lasting memories in one of Ireland’s most beau
         <h3>Our Location</h3>
       <div id="map">
     </div>
-
+    
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
     <script>mapboxgl.accessToken = 'pk.eyJ1IjoiY29sZHF1aW4iLCJhIjoiY203Y3c3aXJiMHBscTJqc2Q0NTllMzk0dCJ9.0s8xIKJJBVdrOADSavINGQ';
@@ -344,58 +359,6 @@ Book your stay today and create lasting memories in one of Ireland’s most beau
 
       </div>
     </footer>
-    <!-- Modal -->
-    <div class="modal fade" id="Booking" tabindex="-1" aria-labelledby="BookingLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="BookingLabel">Booking</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p class="lead">Fill in your contact Details</p>
-            <form>
-              <Div class="mb-3">
-                <label for="first-name" class="call-form-label">First Name:
-
-                </label>
-                <input type="text" class="form-control" id="first-name"
-                />
-              </Div>
-              <Div class="mb-3">
-                <label for="Last-name" class="call-form-label">Last Name:
-
-                </label>
-                <input type="text" class="form-control" id="Last-name"
-                />
-              </Div>
-
-              <Div class="mb-3">
-                <label for="Email" class="call-form-label">Email:
-
-                </label>
-                <input type="text" class="form-control" id="Email"
-                />
-              </Div>
-              <Div class="mb-3">
-                <label id="Phone-number" for="Phone-Number" class="call-form-label">Phone Number:
-
-                </label>
-                <input type="text" class="form-control" id="Phone "
-                />
-              </Div>
-
-
-
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  
+ 
   </body>
 </html>
